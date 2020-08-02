@@ -22,6 +22,12 @@ function check() {
           return null;
         }
       }
+      XHR.onerror = () => {
+        alert("Request failed");
+      };
+
+      e.preventDefault();
+
     });
   });
 }
